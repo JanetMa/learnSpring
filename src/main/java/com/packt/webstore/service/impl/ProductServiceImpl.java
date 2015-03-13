@@ -49,6 +49,12 @@ public class ProductServiceImpl implements ProductService{
 		
 		return productRepository.getProductsByManufacturer(manufacturer);
 	}
+
+	@Override
+	public void addProduct(Product product) {
+		// TODO Auto-generated method stub
+		productRepository.addProduct(product);
+	}
 	
 }
 

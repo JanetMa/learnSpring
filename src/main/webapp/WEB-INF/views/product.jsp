@@ -18,8 +18,11 @@
   </section>
   <section class="container">
     <div class="row">
+    	<img src="<c:url value="/resource/images/${product.productId}.jpg"></c:url>" alt="image" style = "width:100%"/>
+    	</div>
       <div class="col-md-5">
         <h3>${product.name}</h3>
+        <p>${product.productId}</p>
         <p>${product.description}</p>
         <p>
           <strong>Item Code : </strong><span class="label label-warning">${product.productId}</span>
@@ -44,7 +47,7 @@
           </a>
         </p>
       </div>
-    </div>
+
   </section>
 </body>
 </html>
